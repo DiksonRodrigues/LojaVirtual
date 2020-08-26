@@ -105,7 +105,7 @@ $ expo start
 
 ### 🦸 Autor
 
-<h1>Dikson Rodrigues</h1>
+Dikson Rodrigues
 
 ---
 
@@ -119,4 +119,4 @@ Sendo criado ❤️ por Dikson Rodrigues 👋🏽 [Entre em contato!](https://ww
 
 ##  Versões do README
 
-[Português 🇧🇷](./README.md)  |  [Inglês sem emojis 🇺🇸](./README-en.md) | [Portugues sem logo  🇧🇷](./README-sem-logo.md) 
+[Português 🇧🇷](./README.md)  
