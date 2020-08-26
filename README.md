@@ -97,10 +97,10 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 #### **Website**  ([ReactNative](https://reactnative.org/)  +  [Expo](https://www.expo.io/))
 
--   **[React Icons](https://react-icons.github.io/react-icons/)**
--   **[Axios](https://github.com/axios/axios)**
--   **[React Leaflet](https://react-leaflet.js.org/)**
--   **[React Dropzone](https://github.com/react-dropzone/react-dropzone)**
+-   [React Icons](https://react-icons.github.io/react-icons/)
+-   [Axios](https://github.com/axios/axios)
+-   [React Leaflet](https://react-leaflet.js.org/)
+-   [React Dropzone](https://github.com/react-dropzone/react-dropzone)
 
 
 #### [](https://github.com/tgmarinho/Ecoleta#mobile-react-native--typescript)**Mobile**  ([React Native](http://www.reactnative.com/)  +  [TypeScript](https://www.typescriptlang.org/))
@@ -124,7 +124,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## 🦸 Autor
 
-<h1> Dikson Rodrigues</h1>
+<h1> Dikson Rodrigues </h1>
 
 ---
 
