@@ -46,6 +46,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 
 Sendo criado com ❤️ por Dikson Rodrigues 👋🏽 Entre em contato! <br/>
-[![Linkedin Badge](https://img.shields.io/badge/-Dikson Rodrigues-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/dikson-rodrigues-562b351a3)](https://www.linkedin.com/in/dikson-rodrigues-562b351a3) <br/>
+[![Linkedin Badge](https://img.shields.io/badge/-DiksonRodrigues-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/dikson-rodrigues-562b351a3)](https://www.linkedin.com/in/dikson-rodrigues-562b351a3) <br/>
 
 [![Gmail Badge](https://img.shields.io/badge/-eoscreativetech@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:eoscreativetech@gmail.com)](mailto:eoscreativetech@gmail.com)
