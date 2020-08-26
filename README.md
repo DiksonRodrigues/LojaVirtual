@@ -1,5 +1,5 @@
 <h1 align="center">Loja Virtual</h1>
-Criação de uma loja virtual com EXPO
+
 
 <p align="center"> 🚀 Projeto feito para testar minhas habilidades com EXPO</p>
 
@@ -11,3 +11,19 @@ Criação de uma loja virtual com EXPO
  <a href="#licenc-a">Licença MIT</a> • 
  <a href="#autor">Dikson Rodrigues</a>
 </p>
+
+<h4 align="center"> 
+	🚧  Expo Project 🚀 Em construção...  🚧
+</h4>
+
+### Features
+
+- [x] Cadastro de usuário
+- [x] Cadastro de cliente
+- [x] Cadastro de produtos
+- [x] Visualizar produtos
+- [x] Carrinho de Compras
+
+<h1 align="center">
+  <img alt="LojaVirtual" title="#LojaVirtual" src="./assets/banner.png" />
+</h1>
