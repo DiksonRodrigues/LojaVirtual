@@ -25,6 +25,6 @@
 - [x] Carrinho de Compras
 
 <h1 align="center">
-  <img alt="LojaVirtual" title="#LojaVirtual" src="./assets/imagem.jpeg" />
+  <img alt="LojaVirtual" title="#LojaVirtual" src="./assets/imagem.jpg" />
 </h1>
 
