@@ -7,6 +7,7 @@ import {
   Image,
   TouchableOpacity,
 } from "react-native";
+
 import { MaterialIcons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 
@@ -18,15 +19,10 @@ export default function Home() {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Image
-          source={require("../../assets/banner.png")}
-          style={styles.image}
-        />
 
         <View style={styles.textContainer}>
-          <Text style={styles.text}>TÊNIS</Text>
-          <Text style={[styles.text, { color: "#cececf" }]}> - </Text>
-          <Text style={[styles.text, { color: "#cececf" }]}> MASCULINO </Text>
+          <Text style={styles.text}>Aplicativo Zé Avelino</Text>
+  
           <TouchableOpacity
             style={{ position: "absolute", right: 0, alignSelf: "center" }}
           >
@@ -38,32 +34,32 @@ export default function Home() {
       <View style={styles.line} />
 
       <ScrollView>
-        <Text style={styles.text}>LANÇAMENTOS </Text>
+        <Text style={styles.text}>Destaques</Text>
 
         <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
           <Shoes
-            img={require("../../assets/1.png")}
-            cost="R$199,99"
+            img={require("../../assets/dumbo1.jpg")}
+            cost="R$13,00"
             onClick={() => navigation.navigate("Detail")}
           >
-            Nike AIR FORCE (NOVO)
+            DUMBO T-SHIRTS
           </Shoes>
           <Shoes
-            img={require("../../assets/2.png")}
-            cost="R$299,99"
-            onClick={() => navigation.navigate("Detail")}
+            img={require("../../assets/cljeans1.jpg")}
+            cost="R$35,00"
+            onClick={() => navigation.navigate("Detail2")}
           >
-            Nike AIR MAX MASCULINO (NOVO)
+            CL JEANS
           </Shoes>
         </View>
 
         <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
           <Shoes
-            img={require("../../assets/3.png")}
-            cost="R$599,99"
-            onClick={() => alert("Clicou")}
+            img={require("../../assets/brilho1.jpg")}
+            cost="R$ Á Combinar"
+            onClick={() => navigation.navigate("Detail3")}
           >
-            Nike ROSHE ONE (NOVO)
+            BRILHO DO MAR
           </Shoes>
           <Shoes
             img={require("../../assets/4.png")}
@@ -100,9 +96,6 @@ const styles = StyleSheet.create({
     flex: 1,
     width: "100%",
     backgroundColor: "#fff",
-  },
-  image: {
-    width: "100%",
   },
   textContainer: {
     flexDirection: "row",

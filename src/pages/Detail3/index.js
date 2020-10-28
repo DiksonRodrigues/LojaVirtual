@@ -6,33 +6,34 @@ import {
   ScrollView,
   TouchableOpacity,
   StyleSheet,
+  
 } from "react-native";
 
 import { AntDesign } from '@expo/vector-icons'; 
-
 import SizeButton from "../../component/SizeButton";
 import Button from "../../component/Button";
 
 export default function Detail({ navigation }) {
   navigation.setOptions({
-    headerTitle: "Dumbo T-shirts",
+    headerTitle: "Brilho do Mar",
   });
 
+  
   return (
     <ScrollView style={styles.container}>
       <Image
-        source={require("../../assets/dumdetail.jpg")}
+        source={require("../../assets/brilhodetail.jpg")}
         style={styles.image}
         resizeMode="cover"
       />
 
       <View>
         <View>
-          <Text style={[styles.title, { fontSize: 24 }]}>R$ 13,00</Text>
+          <Text style={[styles.title, { fontSize: 24 }]}> Valores á combinar </Text>
         </View>
         <View opacity={0.4}>
           <Text style={[styles.title, { fontSize: 30 }]}>
-            T-shirts
+            Biquínis
           </Text>
         </View>
 
@@ -49,31 +50,41 @@ export default function Detail({ navigation }) {
             <SizeButton bgColor="#17181a" color="#fff">
               G
             </SizeButton>
+
+            <SizeButton bgColor="#17181a" color="#fff">
+              GG
+            </SizeButton>
+
+            <SizeButton bgColor="#17181a" color="#fff">
+              INFANTIL
+            </SizeButton>
             
           </ScrollView>
         </View>
-
         <View style={styles.textContent}>
-          <View style={{ flexDirection: "row", width: "100%"}}>
+
+         <View style={{ flexDirection: "row", width: "100%"}}>
            <AntDesign name="checksquare" size={34} color="#00FF00" />
            <Text style={{ width: 100, fontWeight: "bold" }}>Vendedor Verificado</Text>
-          </View>
+         </View>
 
           <Text style={styles.textContent}>
-            Dumbo T-shirts está a mais de 4 anos no mercado de T-shirts femininas com vendas no Atacado.
+            Brilho do Mar vem com Novidades para a nova coleção.
+            Biquínis de alta qualidade e um preço super baixo
           </Text>
 
           <Text>______________________________________</Text>
 
-          <Text style={styles.textList}>- Categoria: Feminina</Text>
+          <Text style={styles.textList}>- Categoria: Masculina/Feminina</Text>
 
-          <Text style={styles.textList}>- Produto: Poliéster</Text>
+          <Text style={styles.textList}>- Produto: Biquínis</Text>
 
-          <Text style={styles.textList}>- Local da Loja: Maracanaú - CE Centro de Maracanaú essa Loja atende preferencialmente pelo WhatsApp</Text>
-
+          <Text style={styles.textList}>- Local das Lojas: Fortaleza - CE Feirão Baturité Loja 01 a 06 | Santa Cruz - PE Moda Center - Setor Amarelo/Bloco 04, Loja 17</Text>
+          
         </View>
 
-        <Button />
+        <Button 
+        />
       </View>
     </ScrollView>
   );

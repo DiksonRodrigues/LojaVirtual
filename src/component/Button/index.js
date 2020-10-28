@@ -6,6 +6,7 @@ export default function Button() {
     <View style={styles.container}>
       <TouchableOpacity style={styles.btnContainer}>
         <Text style={styles.title}>COMPRAR</Text>
+        
       </TouchableOpacity>
     </View>
   );

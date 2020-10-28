@@ -9,30 +9,29 @@ import {
 } from "react-native";
 
 import { AntDesign } from '@expo/vector-icons'; 
-
 import SizeButton from "../../component/SizeButton";
 import Button from "../../component/Button";
 
 export default function Detail({ navigation }) {
   navigation.setOptions({
-    headerTitle: "Dumbo T-shirts",
+    headerTitle: "CL Jeans",
   });
 
   return (
     <ScrollView style={styles.container}>
       <Image
-        source={require("../../assets/dumdetail.jpg")}
+        source={require("../../assets/cldetail.jpg")}
         style={styles.image}
         resizeMode="cover"
       />
 
       <View>
-        <View>
-          <Text style={[styles.title, { fontSize: 24 }]}>R$ 13,00</Text>
+        <View >
+          <Text style={[styles.title, { fontSize: 24 }]}> A partir de R$ 35,00</Text>
         </View>
         <View opacity={0.4}>
           <Text style={[styles.title, { fontSize: 30 }]}>
-            T-shirts
+            Jeans em Geral
           </Text>
         </View>
 
@@ -52,25 +51,24 @@ export default function Detail({ navigation }) {
             
           </ScrollView>
         </View>
-
         <View style={styles.textContent}>
-          <View style={{ flexDirection: "row", width: "100%"}}>
+
+         <View style={{ flexDirection: "row", width: "100%"}}>
            <AntDesign name="checksquare" size={34} color="#00FF00" />
            <Text style={{ width: 100, fontWeight: "bold" }}>Vendedor Verificado</Text>
-          </View>
+        </View>
 
           <Text style={styles.textContent}>
-            Dumbo T-shirts está a mais de 4 anos no mercado de T-shirts femininas com vendas no Atacado.
+            Cl Jeans Traz para os clientes o melhor Jeans do mercado.
+            Com qualidade e preço justo a marca CL JEANS vem fazendo
+            seu nome no mercado ao longo dos dias.
           </Text>
-
           <Text>______________________________________</Text>
-
           <Text style={styles.textList}>- Categoria: Feminina</Text>
 
-          <Text style={styles.textList}>- Produto: Poliéster</Text>
+          <Text style={styles.textList}>- Produto: Jeans</Text>
 
-          <Text style={styles.textList}>- Local da Loja: Maracanaú - CE Centro de Maracanaú essa Loja atende preferencialmente pelo WhatsApp</Text>
-
+          <Text style={styles.textList}>- Local da Loja: Fortaleza - CE Rua Jose Avelino - Galpão Pop Shop, BOX 752/772 </Text>
         </View>
 
         <Button />
