@@ -11,7 +11,7 @@ import {
 
 import { AntDesign } from '@expo/vector-icons'; 
 import SizeButton from "../../component/SizeButton";
-import Button from "../../component/Button";
+
 
 export default function Detail({ navigation }) {
   navigation.setOptions({
@@ -83,8 +83,7 @@ export default function Detail({ navigation }) {
           
         </View>
 
-        <Button 
-        />
+        
       </View>
     </ScrollView>
   );

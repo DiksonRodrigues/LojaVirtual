@@ -10,7 +10,7 @@ import {
 
 import { AntDesign } from '@expo/vector-icons'; 
 import SizeButton from "../../component/SizeButton";
-import Button from "../../component/Button";
+
 
 export default function Detail({ navigation }) {
   navigation.setOptions({
@@ -71,7 +71,7 @@ export default function Detail({ navigation }) {
           <Text style={styles.textList}>- Local da Loja: Fortaleza - CE Rua Jose Avelino - Galpão Pop Shop, BOX 752/772 </Text>
         </View>
 
-        <Button />
+        
       </View>
     </ScrollView>
   );

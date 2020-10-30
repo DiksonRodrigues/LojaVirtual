@@ -11,7 +11,8 @@ import {
 import { AntDesign } from '@expo/vector-icons'; 
 
 import SizeButton from "../../component/SizeButton";
-import Button from "../../component/Button";
+
+
 
 export default function Detail({ navigation }) {
   navigation.setOptions({
@@ -19,19 +20,33 @@ export default function Detail({ navigation }) {
   });
 
   return (
-    <ScrollView style={styles.container}>
-      <Image
+    <ScrollView showsVerticalScrollIndicator style={styles.container}>
+
+      <View>
+       <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+        <Image
         source={require("../../assets/dumdetail.jpg")}
-        style={styles.image}
-        resizeMode="cover"
-      />
+        resizeMode= "cover"
+        />
+        <Image
+        source={require("../../assets/dumdetail.jpg")}
+        resizeMode= "cover"
+        />
+       </ScrollView>
+         <View style={{ flexDirection: "row",  right: 20, alignSelf: "flex-start" }}>
+           <Text style={{ fontSize: 20, marginHorizontal: 20, color: 'gray' }}> ARRASTE PRO LADO </Text>
+           <AntDesign name="doubleright" size={24} color="black" />
+           <AntDesign name="doubleright" size={24} color="black" />
+           <AntDesign name="doubleright" size={24} color="black" />
+        </View>
+      </View>
 
       <View>
         <View>
           <Text style={[styles.title, { fontSize: 24 }]}>R$ 13,00</Text>
         </View>
         <View opacity={0.4}>
-          <Text style={[styles.title, { fontSize: 30 }]}>
+          <Text style={[styles.subtitle, { fontSize: 30 }]}>
             T-shirts
           </Text>
         </View>
@@ -73,7 +88,6 @@ export default function Detail({ navigation }) {
 
         </View>
 
-        <Button />
       </View>
     </ScrollView>
   );
@@ -89,6 +103,11 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   title: {
+    fontFamily: "Anton_400Regular",
+    paddingHorizontal: "2%",
+    marginVertical: "10%"
+  },
+  subtitle: {
     fontFamily: "Anton_400Regular",
     paddingHorizontal: "2%",
   },

@@ -10,6 +10,7 @@ import {
 
 import { MaterialIcons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
+import { AntDesign } from '@expo/vector-icons'; 
 
 import Shoes from "../../component/Shoes";
 
@@ -26,7 +27,7 @@ export default function Home() {
           <TouchableOpacity
             style={{ position: "absolute", right: 0, alignSelf: "center" }}
           >
-            <MaterialIcons name="filter-list" size={24} color="#000" />
+            <AntDesign name="mobile1" size={24} color="darkgray" />
           </TouchableOpacity>
         </View>
       </View>
@@ -99,13 +100,19 @@ const styles = StyleSheet.create({
   },
   textContainer: {
     flexDirection: "row",
-    marginVertical: "5%",
+    marginVertical: "2%",
     marginHorizontal: "5%",
+    marginEnd: 30,
+    marginTop: 30,
+    left: 20,
+    right: 20
   },
   text: {
     fontFamily: "Anton_400Regular",
     fontSize: 26,
-    marginHorizontal: "1%",
+    marginHorizontal: "6%",
+    marginVertical: "3%",
+    right: 20,
   },
   line: {
     borderBottomColor: "#d8d8d8",
