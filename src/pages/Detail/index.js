@@ -82,7 +82,7 @@ export default function Detail({ navigation }) {
 
           <Text style={styles.textList}>- Categoria: Feminina</Text>
 
-          <Text style={styles.textList}>- Produto: Poliéster</Text>
+          <Text style={styles.textList}>- Produto: Camisetas Femininas</Text>
 
           <Text style={styles.textList}>- Local da Loja: Maracanaú - CE Centro de Maracanaú essa Loja atende preferencialmente pelo WhatsApp</Text>
 
@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
   textContent: {
     fontSize: 16,
     lineHeight: 25,
-    marginVertical: "2%",
+    marginVertical: "5%",
     paddingHorizontal: "2%",
   },
   textTitle: {
