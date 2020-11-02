@@ -45,6 +45,7 @@ export default function Home() {
           >
             DUMBO T-SHIRTS
           </Shoes>
+
           <Shoes
             img={require("../../assets/cljeans1.jpg")}
             cost="R$35,00"
@@ -62,12 +63,13 @@ export default function Home() {
           >
             BRILHO DO MAR
           </Shoes>
+          
           <Shoes
-            img={require("../../assets/4.png")}
-            cost="R$399,99"
-            onClick={() => alert("Clicou")}
+            img={require("../../assets/feminice1.jpg")}
+            cost="R$28.00"
+            onClick={() => navigation.navigate("Detail4")}
           >
-            Nike Air Max Advantage (NOVO)
+            Loja Feminice 
           </Shoes>
         </View>
 

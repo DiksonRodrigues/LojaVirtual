@@ -6,43 +6,47 @@ import {
   ScrollView,
   TouchableOpacity,
   StyleSheet,
+  
 } from "react-native";
 
 import { AntDesign } from '@expo/vector-icons'; 
+
 import SizeButton from "../../component/SizeButton";
 
 
 export default function Detail({ navigation }) {
   navigation.setOptions({
-    headerTitle: "CL Jeans",
+    headerTitle: "Feminice - Moda Feminina",
   });
 
+  
   return (
-
     <ScrollView showsVerticalScrollIndicator style={styles.container}>
 
       <View>
        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
         <Image
-        source={require("../../assets/cldetail.jpg")}
+        source={require("../../assets/feminicedetail.jpg")}
         resizeMode= "cover"
         />
         <Image
-        source={require("../../assets/cldetail2.jpg")}
+        source={require("../../assets/feminicedetail2.jpg")}
         resizeMode= "cover"
         />
         <Image
-        source={require("../../assets/cldetail3.jpg")}
+        source={require("../../assets/feminicedetail3.jpg")}
         resizeMode= "cover"
         />
         <Image
-        source={require("../../assets/cldetail4.jpg")}
+        source={require("../../assets/feminicedetail4.jpg")}
         resizeMode= "cover"
         />
-        
-    </ScrollView>
-
-    <View style={{ flexDirection: "row",  right: 20, alignSelf: "flex-start" }}>
+        <Image
+        source={require("../../assets/feminicedetail5.jpg")}
+        resizeMode= "cover"
+        />
+       </ScrollView>
+         <View style={{ flexDirection: "row",  right: 20, alignSelf: "flex-start" }}>
            <Text style={{ fontSize: 20, marginHorizontal: 20, color: 'gray' }}> ARRASTE PRO LADO </Text>
            <AntDesign name="doubleright" size={24} color="black" />
            <AntDesign name="doubleright" size={24} color="black" />
@@ -51,27 +55,19 @@ export default function Detail({ navigation }) {
       </View>
 
       <View>
-        <View >
-          <Text style={[styles.title, { fontSize: 24 }]}> A partir de R$ 35,00</Text>
+        <View>
+          <Text style={[styles.title, { fontSize: 24 }]}>R$ 28.00 </Text>
         </View>
         <View opacity={0.4}>
           <Text style={[styles.title, { fontSize: 30 }]}>
-            Jeans em Geral
+            Alfaiataria 
           </Text>
         </View>
 
         <View style={{ flexDirection: "row", width: "100%" }}>
           <ScrollView horizontal showsHorizontalScrollIndicator={false}>
             <SizeButton bgColor="#17181a" color="#fff">
-              P
-            </SizeButton>
-
-            <SizeButton bgColor="#17181a" color="#fff">
-              M
-            </SizeButton>
-
-            <SizeButton bgColor="#17181a" color="#fff">
-              G
+              Tamanho Único 
             </SizeButton>
             
           </ScrollView>
@@ -81,21 +77,24 @@ export default function Detail({ navigation }) {
          <View style={{ flexDirection: "row", width: "100%"}}>
            <AntDesign name="checksquare" size={34} color="#00FF00" />
            <Text style={{ width: 100, fontWeight: "bold" }}>Vendedor Verificado</Text>
-        </View>
+         </View>
 
           <Text style={styles.textContent}>
-            Cl Jeans Traz para os clientes o melhor Jeans do mercado.
-            Com qualidade e preço justo a marca CL JEANS vem fazendo
-            seu nome no mercado ao longo dos dias.
+            Feminice uma loja especializada em moda feminina, vem
+            trazendo essas lindezas para seus clientes.
           </Text>
+
           <Text>_____________________________________________</Text>
-          <Text style={styles.textList}>- Categoria: Feminina</Text>
 
-          <Text style={styles.textList}>- Produto: Jeans</Text>
+          <Text style={styles.textList}>- Categoria:Feminina</Text>
 
-          <Text style={styles.textList}>- Local da Loja: Fortaleza - CE Rua Jose Avelino - Galpão Pop Shop, BOX 752/772 </Text>
-        </View> 
+          <Text style={styles.textList}>- Produto: Alfaiataria</Text>
 
+          <Text style={styles.textList}>- Local das Lojas: Local da Loja: Maracanaú - CE Centro de Maracanaú essa Loja atende preferencialmente pelo WhatsApp</Text>
+          
+        </View>
+
+        
       </View>
     </ScrollView>
   );

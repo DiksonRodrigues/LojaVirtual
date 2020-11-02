@@ -29,7 +29,19 @@ export default function Detail({ navigation }) {
         resizeMode= "cover"
         />
         <Image
-        source={require("../../assets/dumdetail.jpg")}
+        source={require("../../assets/dumdetail2.jpg")}
+        resizeMode= "cover"
+        />
+        <Image
+        source={require("../../assets/dumdetail3.jpg")}
+        resizeMode= "cover"
+        />
+        <Image
+        source={require("../../assets/dumdetail4.jpg")}
+        resizeMode= "cover"
+        />
+        <Image
+        source={require("../../assets/dumdetail5.jpg")}
         resizeMode= "cover"
         />
        </ScrollView>
@@ -78,7 +90,7 @@ export default function Detail({ navigation }) {
             Dumbo T-shirts está a mais de 4 anos no mercado de T-shirts femininas com vendas no Atacado.
           </Text>
 
-          <Text>______________________________________</Text>
+          <Text>_____________________________________________</Text>
 
           <Text style={styles.textList}>- Categoria: Feminina</Text>
 

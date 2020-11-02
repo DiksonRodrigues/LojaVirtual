@@ -20,12 +20,38 @@ export default function Detail({ navigation }) {
 
   
   return (
-    <ScrollView style={styles.container}>
-      <Image
+    <ScrollView showsVerticalScrollIndicator style={styles.container}>
+
+      <View>
+       <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+        <Image
         source={require("../../assets/brilhodetail.jpg")}
-        style={styles.image}
-        resizeMode="cover"
-      />
+        resizeMode= "cover"
+        />
+        <Image
+        source={require("../../assets/brilhodetail2.jpg")}
+        resizeMode= "cover"
+        />
+        <Image
+        source={require("../../assets/brilhodetail3.jpg")}
+        resizeMode= "cover"
+        />
+        <Image
+        source={require("../../assets/brilhodetail4.jpg")}
+        resizeMode= "cover"
+        />
+        <Image
+        source={require("../../assets/brilhodetail5.jpg")}
+        resizeMode= "cover"
+        />
+       </ScrollView>
+         <View style={{ flexDirection: "row",  right: 20, alignSelf: "flex-start" }}>
+           <Text style={{ fontSize: 20, marginHorizontal: 20, color: 'gray' }}> ARRASTE PRO LADO </Text>
+           <AntDesign name="doubleright" size={24} color="black" />
+           <AntDesign name="doubleright" size={24} color="black" />
+           <AntDesign name="doubleright" size={24} color="black" />
+        </View>
+      </View>
 
       <View>
         <View>
@@ -73,7 +99,7 @@ export default function Detail({ navigation }) {
             Biquínis de alta qualidade e um preço super baixo
           </Text>
 
-          <Text>______________________________________</Text>
+          <Text>_____________________________________________</Text>
 
           <Text style={styles.textList}>- Categoria: Masculina/Feminina</Text>
 
@@ -101,6 +127,7 @@ const styles = StyleSheet.create({
   title: {
     fontFamily: "Anton_400Regular",
     paddingHorizontal: "2%",
+    marginVertical: "10%"
   },
   dotContainer: {
     flexDirection: "row",
@@ -109,7 +136,7 @@ const styles = StyleSheet.create({
   textContent: {
     fontSize: 16,
     lineHeight: 25,
-    marginVertical: "2%",
+    marginVertical: "5%",
     paddingHorizontal: "2%",
   },
   textTitle: {
