@@ -21,7 +21,7 @@ export default function Detail({ navigation }) {
 
   
   return (
-    <ScrollView showsVerticalScrollIndicator style={styles.container}>
+    <ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
 
       <View>
        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>

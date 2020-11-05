@@ -6,11 +6,14 @@ import {
   ScrollView,
   TouchableOpacity,
   StyleSheet,
+  Linking
 } from "react-native";
 
 import { AntDesign } from '@expo/vector-icons'; 
 
 import SizeButton from "../../component/SizeButton";
+
+import Button from "../../component/Button";
 
 
 
@@ -19,8 +22,17 @@ export default function Detail({ navigation }) {
     headerTitle: "Dumbo T-shirts",
   });
 
+ /*Essa função abaixo é para chamar o lojista no Zap 
+ Depois, la abaixo chamamos o botão que importamos aqui.
+ */
+
+  const handleWhatsAppPress = async (...props) => {
+    await Linking.openURL("https://wa.me/+5585998306311?text= Vim pelo Aplicativo");
+    
+  };
+  
   return (
-    <ScrollView showsVerticalScrollIndicator style={styles.container}>
+    <ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
 
       <View>
        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
@@ -100,6 +112,10 @@ export default function Detail({ navigation }) {
 
         </View>
 
+        <Button
+        onClick={handleWhatsAppPress}
+        />
+
       </View>
     </ScrollView>
   );
@@ -117,7 +133,7 @@ const styles = StyleSheet.create({
   title: {
     fontFamily: "Anton_400Regular",
     paddingHorizontal: "2%",
-    marginVertical: "10%"
+    marginVertical: "5%"
   },
   subtitle: {
     fontFamily: "Anton_400Regular",
@@ -141,4 +157,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     lineHeight: 25,
   },
+  buttonZap: {
+    fontSize: 40
+  }
 });
