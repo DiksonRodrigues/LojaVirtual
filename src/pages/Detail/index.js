@@ -16,21 +16,15 @@ import SizeButton from "../../component/SizeButton";
 import Button from "../../component/Button";
 
 
-
 export default function Detail({ navigation }) {
   navigation.setOptions({
     headerTitle: "Dumbo T-shirts",
   });
 
- /*Essa função abaixo é para chamar o lojista no Zap 
- Depois, la abaixo chamamos o botão que importamos aqui.
- */
-
-  const handleWhatsAppPress = async (...props) => {
-    await Linking.openURL("https://wa.me/+5585998306311?text= Vim pelo Aplicativo");
-    
+  const handleInstagramPress = async () => {
+    await Linking.openURL("https://www.instagram.com/loja.dumbo/");
   };
-  
+
   return (
     <ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
 
@@ -112,9 +106,14 @@ export default function Detail({ navigation }) {
 
         </View>
 
-        <Button
-        onClick={handleWhatsAppPress}
-        />
+        <TouchableOpacity style={styles.btnContainer} 
+             onPress={handleInstagramPress}>
+            
+             <AntDesign name="instagram" size={34} color="white" />
+             <Text style={styles.titleInsta} >Instagram</Text>
+         </TouchableOpacity>
+        
+        <Button/>
 
       </View>
     </ScrollView>
@@ -157,7 +156,20 @@ const styles = StyleSheet.create({
     fontSize: 16,
     lineHeight: 25,
   },
-  buttonZap: {
-    fontSize: 40
+  btnContainer:{
+    flexDirection: 'row',
+    width:'90%',
+    height: 50,
+    backgroundColor: '#836FFF',
+    borderRadius: 5,
+    marginVertical: '5%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginHorizontal: '5%',
+  },
+  titleInsta: {
+    marginHorizontal: '5%',
+    fontSize: 16,
+    color: '#fff'
   }
 });

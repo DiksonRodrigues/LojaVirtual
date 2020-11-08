@@ -6,12 +6,14 @@ import {
   ScrollView,
   TouchableOpacity,
   StyleSheet,
-  
+  Linking
 } from "react-native";
 
 import { AntDesign } from '@expo/vector-icons'; 
 
 import SizeButton from "../../component/SizeButton";
+
+import Button from "../../component/Button/zapdetail4";
 
 
 export default function Detail({ navigation }) {
@@ -19,7 +21,12 @@ export default function Detail({ navigation }) {
     headerTitle: "Feminice - Moda Feminina",
   });
 
-  
+  const handleInstagramPress = async () => {
+    await Linking.openURL("https://www.instagram.com/feminice_modafeminina/");
+  };
+
+  const zapdetail4 = {}
+
   return (
     <ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
 
@@ -94,6 +101,14 @@ export default function Detail({ navigation }) {
           
         </View>
 
+        <TouchableOpacity style={styles.btnContainer} 
+             onPress={handleInstagramPress}>
+            
+             <AntDesign name="instagram" size={34} color="white" />
+             <Text style={styles.titleInsta} >Instagram</Text>
+         </TouchableOpacity>
+       
+       <Button onClick={zapdetail4} />
         
       </View>
     </ScrollView>
@@ -112,7 +127,7 @@ const styles = StyleSheet.create({
   title: {
     fontFamily: "Anton_400Regular",
     paddingHorizontal: "2%",
-    marginVertical: "10%"
+    marginVertical: "5%"
   },
   dotContainer: {
     flexDirection: "row",
@@ -132,4 +147,20 @@ const styles = StyleSheet.create({
     fontSize: 16,
     lineHeight: 25,
   },
+  btnContainer:{
+    flexDirection: 'row',
+    width:'90%',
+    height: 50,
+    backgroundColor: '#836FFF',
+    borderRadius: 5,
+    marginVertical: '5%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginHorizontal: '5%',
+  },
+  titleInsta: {
+    marginHorizontal: '5%',
+    fontSize: 16,
+    color: '#fff'
+  }
 });

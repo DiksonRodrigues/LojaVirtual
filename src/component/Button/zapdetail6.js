@@ -3,16 +3,17 @@ import { View, Text, StyleSheet, TouchableOpacity, Linking } from 'react-native'
 
 import { FontAwesome} from '@expo/vector-icons';
 
+
 export default function Button() {
   const handleWhatsAppPress = async () => {
-    await Linking.openURL("https://wa.me/+5585998306311?text= Vim pelo Aplicativo Zé Avelino");
+    await Linking.openURL("https://wa.me/+55859998016418?text= Vim pelo Aplicativo Zé Avelino");
   };
  return (
    <View style={styles.container}>
      <TouchableOpacity 
       style={styles.btnContainer} 
       onPress={handleWhatsAppPress}>
-
+        
         <FontAwesome name="whatsapp" size={34} color="#fff" />
         <Text style={styles.title} >WhatsApp</Text>
      </TouchableOpacity>
@@ -23,7 +24,7 @@ export default function Button() {
 const styles = StyleSheet.create({
   container:{
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
   btnContainer:{
     flexDirection: 'row',
@@ -40,5 +41,4 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: '#fff'
   }
-
 });

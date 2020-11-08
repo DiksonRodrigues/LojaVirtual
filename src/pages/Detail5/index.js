@@ -13,19 +13,19 @@ import { AntDesign } from '@expo/vector-icons';
 
 import SizeButton from "../../component/SizeButton";
 
-import Button from "../../component/Button/zapdetail3";
+import Button from "../../component/Button/zapdetail5";
+
 
 
 export default function Detail({ navigation }) {
   navigation.setOptions({
-    headerTitle: "Brilho do Mar",
+    headerTitle: "Ramira Moda Fitness",
   });
 
   const handleInstagramPress = async () => {
-    await Linking.openURL("https://www.instagram.com/brilhodomarmodapraia/");
+    await Linking.openURL("https://www.instagram.com/ramiramodafitness/");
   };
-
-  const zapdetail3 = {}
+  const zapdetail5 = {}
 
   return (
     <ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
@@ -33,23 +33,23 @@ export default function Detail({ navigation }) {
       <View>
        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
         <Image
-        source={require("../../assets/brilhodetail.jpg")}
+        source={require("../../assets/ramiradetail.jpg")}
         resizeMode= "cover"
         />
         <Image
-        source={require("../../assets/brilhodetail2.jpg")}
+        source={require("../../assets/ramiradetail2.jpg")}
         resizeMode= "cover"
         />
         <Image
-        source={require("../../assets/brilhodetail3.jpg")}
+        source={require("../../assets/ramiradetail3.jpg")}
         resizeMode= "cover"
         />
         <Image
-        source={require("../../assets/brilhodetail4.jpg")}
+        source={require("../../assets/ramiradetail4.jpg")}
         resizeMode= "cover"
         />
         <Image
-        source={require("../../assets/brilhodetail5.jpg")}
+        source={require("../../assets/ramiradetail5.jpg")}
         resizeMode= "cover"
         />
        </ScrollView>
@@ -67,7 +67,7 @@ export default function Detail({ navigation }) {
         </View>
         <View opacity={0.4}>
           <Text style={[styles.title, { fontSize: 30 }]}>
-            Biquínis
+            Fitness
           </Text>
         </View>
 
@@ -84,14 +84,6 @@ export default function Detail({ navigation }) {
             <SizeButton bgColor="#17181a" color="#fff">
               G
             </SizeButton>
-
-            <SizeButton bgColor="#17181a" color="#fff">
-              GG
-            </SizeButton>
-
-            <SizeButton bgColor="#17181a" color="#fff">
-              INFANTIL
-            </SizeButton>
             
           </ScrollView>
         </View>
@@ -103,17 +95,18 @@ export default function Detail({ navigation }) {
          </View>
 
           <Text style={styles.textContent}>
-            Brilho do Mar vem com Novidades para a nova coleção.
-            Biquínis de alta qualidade e um preço super baixo
+            Ramira Moda Fitness vem com Novidades para a nova coleção.
+            Roupas Fitness de alta qualidade e um preço super baixo, Venha conferir
           </Text>
 
           <Text>_____________________________________________</Text>
 
-          <Text style={styles.textList}>- Categoria: Masculina/Feminina</Text>
+          <Text style={styles.textList}>- Categoria: Feminina </Text>
 
-          <Text style={styles.textList}>- Produto: Biquínis</Text>
+          <Text style={styles.textList}>- Produto: Fitness </Text>
 
-          <Text style={styles.textList}>- Local das Lojas: Fortaleza - CE Feirão Baturité Loja 01 a 06 | Santa Cruz - PE Moda Center - Setor Amarelo/Bloco 04, Loja 17</Text>
+          <Text style={styles.textList}>- Local das Lojas: Fortaleza - CE José Avelino N ° 52 Box C6/C07 GALPÃO DO BANHO | Quiosque Pracinha do João XXIII
+          Rua Desembargador Gomes Parente</Text>
           
         </View>
 
@@ -124,7 +117,7 @@ export default function Detail({ navigation }) {
              <Text style={styles.titleInsta} >Instagram</Text>
          </TouchableOpacity>
 
-        <Button onClick={zapdetail3} />
+        <Button onClick= {zapdetail5} />
 
       </View>
     </ScrollView>

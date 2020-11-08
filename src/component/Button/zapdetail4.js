@@ -5,7 +5,7 @@ import { FontAwesome} from '@expo/vector-icons';
 
 export default function Button() {
   const handleWhatsAppPress = async () => {
-    await Linking.openURL("https://wa.me/+5585998306311?text= Vim pelo Aplicativo Zé Avelino");
+    await Linking.openURL("https://wa.me/+5585981584814?text= Vim pelo Aplicativo Zé Avelino");
   };
  return (
    <View style={styles.container}>
@@ -13,7 +13,7 @@ export default function Button() {
       style={styles.btnContainer} 
       onPress={handleWhatsAppPress}>
 
-        <FontAwesome name="whatsapp" size={34} color="#fff" />
+       <FontAwesome name="whatsapp" size={34} color="#fff" />
         <Text style={styles.title} >WhatsApp</Text>
      </TouchableOpacity>
    </View>

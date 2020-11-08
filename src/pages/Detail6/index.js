@@ -13,47 +13,51 @@ import { AntDesign } from '@expo/vector-icons';
 
 import SizeButton from "../../component/SizeButton";
 
-import Button from "../../component/Button/zapdetail3";
+import Button from "../../component/Button/zapdetail6";
+
 
 
 export default function Detail({ navigation }) {
   navigation.setOptions({
-    headerTitle: "Brilho do Mar",
+    headerTitle: "Chinntz",
   });
-
+  
   const handleInstagramPress = async () => {
-    await Linking.openURL("https://www.instagram.com/brilhodomarmodapraia/");
+    await Linking.openURL("https://www.instagram.com/chinntz/");
   };
 
-  const zapdetail3 = {}
-
+   const zapdetail6 = {}
+   
   return (
+
     <ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
 
       <View>
        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+
         <Image
-        source={require("../../assets/brilhodetail.jpg")}
+        source={require("../../assets/chinntz2.jpg")}
         resizeMode= "cover"
         />
+
         <Image
-        source={require("../../assets/brilhodetail2.jpg")}
+        source={require("../../assets/chinntz3.jpg")}
         resizeMode= "cover"
         />
+
         <Image
-        source={require("../../assets/brilhodetail3.jpg")}
+        source={require("../../assets/chinntz4.jpg")}
         resizeMode= "cover"
         />
+
         <Image
-        source={require("../../assets/brilhodetail4.jpg")}
+        source={require("../../assets/chinntz5.jpg")}
         resizeMode= "cover"
         />
-        <Image
-        source={require("../../assets/brilhodetail5.jpg")}
-        resizeMode= "cover"
-        />
-       </ScrollView>
-         <View style={{ flexDirection: "row",  right: 20, alignSelf: "flex-start" }}>
+        
+    </ScrollView>
+
+    <View style={{ flexDirection: "row",  right: 20, alignSelf: "flex-start" }}>
            <Text style={{ fontSize: 20, marginHorizontal: 20, color: 'gray' }}> ARRASTE PRO LADO </Text>
            <AntDesign name="doubleright" size={24} color="black" />
            <AntDesign name="doubleright" size={24} color="black" />
@@ -62,35 +66,19 @@ export default function Detail({ navigation }) {
       </View>
 
       <View>
-        <View>
-          <Text style={[styles.title, { fontSize: 24 }]}> Valores á combinar </Text>
+        <View >
+          <Text style={[styles.title, { fontSize: 24 }]}> Á Combinar </Text>
         </View>
         <View opacity={0.4}>
           <Text style={[styles.title, { fontSize: 30 }]}>
-            Biquínis
+            Tecidos Variados
           </Text>
         </View>
 
         <View style={{ flexDirection: "row", width: "100%" }}>
           <ScrollView horizontal showsHorizontalScrollIndicator={false}>
             <SizeButton bgColor="#17181a" color="#fff">
-              P
-            </SizeButton>
-
-            <SizeButton bgColor="#17181a" color="#fff">
-              M
-            </SizeButton>
-
-            <SizeButton bgColor="#17181a" color="#fff">
-              G
-            </SizeButton>
-
-            <SizeButton bgColor="#17181a" color="#fff">
-              GG
-            </SizeButton>
-
-            <SizeButton bgColor="#17181a" color="#fff">
-              INFANTIL
+             Tamanho único 
             </SizeButton>
             
           </ScrollView>
@@ -100,31 +88,31 @@ export default function Detail({ navigation }) {
          <View style={{ flexDirection: "row", width: "100%"}}>
            <AntDesign name="checksquare" size={34} color="#00FF00" />
            <Text style={{ width: 100, fontWeight: "bold" }}>Vendedor Verificado</Text>
-         </View>
-
-          <Text style={styles.textContent}>
-            Brilho do Mar vem com Novidades para a nova coleção.
-            Biquínis de alta qualidade e um preço super baixo
-          </Text>
-
-          <Text>_____________________________________________</Text>
-
-          <Text style={styles.textList}>- Categoria: Masculina/Feminina</Text>
-
-          <Text style={styles.textList}>- Produto: Biquínis</Text>
-
-          <Text style={styles.textList}>- Local das Lojas: Fortaleza - CE Feirão Baturité Loja 01 a 06 | Santa Cruz - PE Moda Center - Setor Amarelo/Bloco 04, Loja 17</Text>
-          
         </View>
 
-        <TouchableOpacity style={styles.btnContainer} 
+          <Text style={styles.textContent}>
+            A loja Chinntz vem ao mercado trazendo tudo que a inovação
+            no mercado da moda. Com preços especiais no atacado e varejo,
+            estamos esperando por você...
+          </Text>
+          <Text>_____________________________________________</Text>
+          <Text style={styles.textList}>- Categoria: Feminina</Text>
+
+          <Text style={styles.textList}>- Produto: Jeans</Text>
+
+          <Text style={styles.textList}>- Local da Loja: Fortaleza - CE Showroon (Rua Dr. Oswaldo Rizzato, 1184B, Pajuçara, Maracanaú)</Text>
+        </View> 
+        
+         <TouchableOpacity style={styles.btnContainer} 
              onPress={handleInstagramPress}>
             
              <AntDesign name="instagram" size={34} color="white" />
              <Text style={styles.titleInsta} >Instagram</Text>
          </TouchableOpacity>
 
-        <Button onClick={zapdetail3} />
+         
+         <Button onClick={zapdetail6}/>
+
 
       </View>
     </ScrollView>
@@ -172,7 +160,7 @@ const styles = StyleSheet.create({
     marginVertical: '5%',
     justifyContent: 'center',
     alignItems: 'center',
-    marginHorizontal: '5%',
+    marginHorizontal: '5%'
   },
   titleInsta: {
     marginHorizontal: '5%',

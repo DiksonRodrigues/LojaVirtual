@@ -3,9 +3,10 @@ import { View, Text, StyleSheet, TouchableOpacity, Linking } from 'react-native'
 
 import { FontAwesome} from '@expo/vector-icons';
 
+
 export default function Button() {
   const handleWhatsAppPress = async () => {
-    await Linking.openURL("https://wa.me/+5585998306311?text= Vim pelo Aplicativo Zé Avelino");
+    await Linking.openURL("https://wa.me/+5585988483186?text= Vim pelo Aplicativo Zé Avelino");
   };
  return (
    <View style={styles.container}>

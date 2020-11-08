@@ -8,7 +8,6 @@ import {
   TouchableOpacity,
 } from "react-native";
 
-import { MaterialIcons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 import { AntDesign } from '@expo/vector-icons'; 
 
@@ -35,7 +34,7 @@ export default function Home() {
       <View style={styles.line} />
 
       <ScrollView>
-        <Text style={styles.text}>Destaques</Text>
+        <Text style={styles.textDestaque}>Destaques</Text>
 
         <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
           <Shoes
@@ -75,18 +74,18 @@ export default function Home() {
 
         <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
           <Shoes
-            img={require("../../assets/5.png")}
-            cost="R$799,99"
-            onClick={() => alert("Clicou")}
+            img={require("../../assets/ramira1.jpg")}
+            cost="R$ Á Combinar"
+            onClick={() => navigation.navigate("Detail5")}
           >
-            Nike Air Max Sequent 3(NOVO)
+            Ramira Moda Fitness
           </Shoes>
           <Shoes
-            img={require("../../assets/6.png")}
-            cost="R$499,99"
-            onClick={() => alert("Clicou")}
+            img={require("../../assets/chitzc.jpg")}
+            cost="R$ Á Combinar"
+            onClick={() => navigation.navigate("Detail6")}
           >
-            Nike Structure 21 (NOVO)
+           Chinntz
           </Shoes>
         </View>
       </ScrollView>
@@ -99,6 +98,9 @@ const styles = StyleSheet.create({
     flex: 1,
     width: "100%",
     backgroundColor: "#fff",
+  },
+  header: {
+    backgroundColor: "#fff", 
   },
   textContainer: {
     flexDirection: "row",
@@ -114,7 +116,14 @@ const styles = StyleSheet.create({
     fontSize: 26,
     marginHorizontal: "6%",
     marginVertical: "3%",
-    right: 20,
+    right: 50,
+  },
+  textDestaque:{
+    fontFamily: "Anton_400Regular",
+    fontSize: 26,
+    marginHorizontal: "6%",
+    marginVertical: "3%",
+    right: 10,
   },
   line: {
     borderBottomColor: "#d8d8d8",
