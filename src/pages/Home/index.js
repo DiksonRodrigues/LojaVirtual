@@ -9,9 +9,11 @@ import {
 } from "react-native";
 
 import { useNavigation } from "@react-navigation/native";
+
 import { AntDesign } from '@expo/vector-icons'; 
 
 import Shoes from "../../component/Shoes";
+
 
 export default function Home() {
   const navigation = useNavigation();
@@ -19,7 +21,6 @@ export default function Home() {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-
         <View style={styles.textContainer}>
           <Text style={styles.text}>Aplicativo Zé Avelino</Text>
   
@@ -87,7 +88,8 @@ export default function Home() {
           >
            Chinntz
           </Shoes>
-        </View>
+          
+        </View> 
       </ScrollView>
     </View>
   );
@@ -113,12 +115,14 @@ const styles = StyleSheet.create({
   },
   text: {
     fontFamily: "Anton_400Regular",
+    color: '#000',
     fontSize: 26,
     marginHorizontal: "6%",
     marginVertical: "3%",
     right: 50,
   },
   textDestaque:{
+    color: '#000',
     fontFamily: "Anton_400Regular",
     fontSize: 26,
     marginHorizontal: "6%",
@@ -126,7 +130,7 @@ const styles = StyleSheet.create({
     right: 10,
   },
   line: {
-    borderBottomColor: "#d8d8d8",
+    borderBottomColor: "#fff",
     borderBottomWidth: 2,
   },
 });

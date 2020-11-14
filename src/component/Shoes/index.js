@@ -31,6 +31,9 @@ const styles = StyleSheet.create({
   shoesImg: {
     width: 175,
     height: 175,
+    borderRadius: 20,
+    borderWidth: 3,
+    borderColor: "#C0C0C0",
   },
   shoesText: {
     fontSize: 13,
