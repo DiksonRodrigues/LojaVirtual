@@ -3,7 +3,6 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
 
-
 import Home from "./pages/Home";
 import Detail from "./pages/Detail";
 import Detail2 from "./pages/Detail2";
@@ -16,7 +15,7 @@ import Detail6 from "./pages/Detail6";
 const stack = createStackNavigator();
 
 
-function Routes() {
+ function Routes() {
   return (
     <NavigationContainer>
       <stack.Navigator>
