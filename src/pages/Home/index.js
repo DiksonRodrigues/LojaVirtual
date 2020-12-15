@@ -23,7 +23,7 @@ export default function Home() {
       <View style={styles.header}>
         <View style={styles.textContainer}>
           <Text style={styles.text}>Aplicativo Zé Avelino</Text>
-  
+          
           <TouchableOpacity
             style={{ position: "absolute", right: 0, alignSelf: "center" }}
           >
@@ -91,6 +91,7 @@ export default function Home() {
           
         </View> 
       </ScrollView>
+      
     </View>
   );
 }

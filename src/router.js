@@ -10,6 +10,8 @@ import Detail3 from "./pages/Detail3";
 import Detail4 from "./pages/Detail4";
 import Detail5 from "./pages/Detail5";
 import Detail6 from "./pages/Detail6";
+import Tabs from "./component/Tabs";
+
 
 
 const stack = createStackNavigator();

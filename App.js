@@ -6,6 +6,7 @@ import { useFonts, Anton_400Regular } from "@expo-google-fonts/anton";
 
 import Routes from "./src/router";
 
+
 export default function App() {
   let [fontsLoaded] = useFonts({
     Anton_400Regular,
@@ -17,8 +18,9 @@ export default function App() {
 
   return (
     <>
-      <StatusBar style="ligth" backgroundColor="#f0f0f0" translucent={true} />
-      <Routes />
+      <StatusBar style="ligth" backgroundColor="#f0f0f0" translucent={true}/>
+      <Routes/>
     </>
+    
   );
 }
