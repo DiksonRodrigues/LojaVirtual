@@ -3,6 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
 
+
 import Home from "./pages/Home";
 import Detail from "./pages/Detail";
 import Detail2 from "./pages/Detail2";
@@ -10,12 +11,8 @@ import Detail3 from "./pages/Detail3";
 import Detail4 from "./pages/Detail4";
 import Detail5 from "./pages/Detail5";
 import Detail6 from "./pages/Detail6";
-import Tabs from "./component/Tabs";
-
-
 
 const stack = createStackNavigator();
-
 
  function Routes() {
   return (
@@ -26,6 +23,7 @@ const stack = createStackNavigator();
           component={Home}
           options={{ headerShown: false }}
         />
+      
         <stack.Screen name="Detail" component={Detail} />
         <stack.Screen name="Detail2" component={Detail2} />
         <stack.Screen name="Detail3" component={Detail3} />

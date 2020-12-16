@@ -7,6 +7,7 @@ import { useFonts, Anton_400Regular } from "@expo-google-fonts/anton";
 import Routes from "./src/router";
 
 
+
 export default function App() {
   let [fontsLoaded] = useFonts({
     Anton_400Regular,
