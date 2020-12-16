@@ -1,47 +1,41 @@
 
 import React from 'react';
 import { Text, View } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import Icon from '@expo/vector-icons/Ionicons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { NavigationContainer } from '@react-navigation/native';
+
 
 import Home from "../../pages/Home";
-
-
-function SettingsScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Settings!</Text>
-    </View>
-  );
-}
+import Contatos from "../../pages/Contatos";
 
 const Tab = createBottomTabNavigator();
+
+const icons = {
+  Home: {
+    name: 'ios-home'
+  },
+  Contatos:{
+    name: 'ios-call'
+  },
+};
 
 export default function App() {
   return (
       <Tab.Navigator
         screenOptions={({ route }) => ({
-          tabBarIcon: ({ focused, color, size }) => {
-            let iconName;
+          tabBarIcon: ({ color, size }) => {
+            const { name } = icons[route.name];
+            return <Icon name={name} color={color} size={size}/>
+          }
+        }) }
 
-            if (route.name === 'Home') {
-              iconName = focused ? 'ios-information-circle' : 'ios-information-circle-outline';
-            } else if (route.name === 'Settings') {
-              iconName = focused ? 'ios-list-box' : 'ios-list';
-            }
-
-            
-            return <Ionicons name={iconName} size={size} color={color} />;
-          },
-        })}
         tabBarOptions={{
-          activeTintColor: 'tomato',
+          activeTintColor: 'orangered',
           inactiveTintColor: 'gray',
         }}
       >
         <Tab.Screen name="Home" component={Home} />
-        <Tab.Screen name="Settings" component={SettingsScreen} />
+        <Tab.Screen name="Contatos" component={Contatos} />
       </Tab.Navigator>
      
   );

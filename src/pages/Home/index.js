@@ -100,10 +100,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     width: "100%",
-    backgroundColor: "#fff",
+    backgroundColor: "#F8F8FF",
   },
   header: {
-    backgroundColor: "#fff", 
+    backgroundColor: "#F8F8FF", 
   },
   textContainer: {
     flexDirection: "row",
