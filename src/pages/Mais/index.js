@@ -6,14 +6,14 @@ import {
 } from "react-native";
 
 
-export default function Contatos() {
+export default function Mais() {
   
 
   return (
   <View style={styles.container}>
       <View style={styles.text}>
       </View>
-       <Text>Mais Contatos</Text>
+       <Text>Nessa Tela terá as Excursões, hotel, restaurantes etc e etc</Text>
   </View>
   );
 }
