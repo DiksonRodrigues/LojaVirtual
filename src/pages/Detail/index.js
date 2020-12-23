@@ -61,7 +61,7 @@ export default function Detail({ navigation }) {
 
       <View>
         <View>
-          <Text style={[styles.title, { fontSize: 24 }]}>R$ 13,00</Text>
+          <Text style={[styles.title, { fontSize: 24 }]}>R$ 15,00</Text>
         </View>
         <View opacity={0.4}>
           <Text style={[styles.subtitle, { fontSize: 30 }]}>
