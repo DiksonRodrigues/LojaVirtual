@@ -14,6 +14,8 @@ import { AntDesign } from '@expo/vector-icons';
 
 import Shoes from "../../component/Shoes";
 
+import Dicas from "../Dicas";
+
 export default function Home() {
   const navigation = useNavigation();
 
@@ -89,7 +91,36 @@ export default function Home() {
           </Shoes>
           
         </View> 
+       
+        <Text style= {[styles.textDestaque, { marginTop: 20 } ]}>
+       Dica do Dia
+      </Text>
+      
+      <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{paddingHorizontal: 15  }}>
+       
+       <Dicas
+        cover={require('../../assets/hotel.jpg')}
+        Dica="Hotel"
+        offer="20%"
+       />
+
+      <Dicas
+        cover={require('../../assets/hotel.jpg')}
+        Dica="Excursão"
+        offer="25%"
+       />
+
+      <Dicas
+        cover={require('../../assets/hotel.jpg')}
+        Dica="Loja"
+        offer="20%"
+       />
+
       </ScrollView>
+
+      </ScrollView>
+      
+      
       
     </View>
   );

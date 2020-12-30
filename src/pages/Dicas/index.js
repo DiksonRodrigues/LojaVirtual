@@ -1,34 +1,40 @@
-import React from "react";
-import {
-  View,
-  Text,
-  StyleSheet,
-} from "react-native";
-
+import React from 'react';
+import { View, StyleSheet, ImageBackground, Text } from 'react-native';
 
 export default function Dicas() {
-  
+ return (
+   <ImageBackground 
+   source={require('../../assets/hotel.jpg')}
+   style={styles.container}
+   blurRadius={2}
+   >
 
-  return (
-  <View style={styles.container}>
-      <View style={styles.text}>
-      </View>
-       <Text>Dicas</Text>
-  </View>
+      <Text style={styles.Dica} >
+        Hospedagem
+      </Text>    
+
+      <Text style={styles.text} >
+        25% OFF
+      </Text>   
+
+   </ImageBackground>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#aaaa", 
-    alignItems: 'center',
-  },
-  text: {
-    flex: 1,
-    color: '#ffab',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#fff',
-  }
+container:{
+  height: 130,
+  width: 230,
+  marginRight: 20,
+  borderRadius: 10,
+  marginBottom: 40,
+  opacity: 0.8,
+  backgroundColor: "#000",
+  marginLeft: 3,
+  padding: 12,
+  marginTop: 20,
+},
+Dica:{
+  
+}
 });
