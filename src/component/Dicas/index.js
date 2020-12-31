@@ -1,23 +1,33 @@
+/* COMPONENTE DICAS 
+  Aqui criei um componente que vai ficar no nosso HOME com um TouchableOpacity,
+  para dar destaque em algumas novidades. Aqui posso colocar os meus parceiros,
+  como barraca de praia, guias turisticos, galpões dentre outros...
+*/ 
+
+
 import React from 'react';
-import { View, StyleSheet, ImageBackground, Text } from 'react-native';
+import { View, StyleSheet, ImageBackground, Text, TouchableOpacity  } from 'react-native';
 
-export default function Dicas({cover, Dica, offer}) {
+export default function Dicas({cover, Dica, offer, onClick}) {
  return (
-   <ImageBackground 
-   source={cover}
-   style={styles.container}
-   blurRadius={3}
-   >
+   <TouchableOpacity onPress={onClick} >
+        <ImageBackground 
+        source={cover}
+        style={styles.container}
+        blurRadius={3}
+        >
 
-      <Text style={[ styles.Dica, styles.shadow ]} >
-        {Dica}
-      </Text>    
+            <Text style={[ styles.Dica, styles.shadow ]} >
+              {Dica}
+            </Text>    
 
-      <Text style={[ styles.text, styles.shadow ]} >
-        {offer}
-      </Text>   
+            <Text style={[ styles.text, styles.shadow ]} >
+              {offer}
+            </Text>   
 
-   </ImageBackground>
+
+        </ImageBackground>
+   </TouchableOpacity>
   );
 }
 
