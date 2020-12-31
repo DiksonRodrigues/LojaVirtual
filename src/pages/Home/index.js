@@ -14,7 +14,7 @@ import { AntDesign } from '@expo/vector-icons';
 
 import Shoes from "../../component/Shoes";
 
-import Dicas from "../Dicas";
+import Dicas from "../../component/Dicas";
 
 export default function Home() {
   const navigation = useNavigation();
@@ -41,7 +41,7 @@ export default function Home() {
         <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
           <Shoes
             img={require("../../assets/dumbo1.jpg")}
-            cost="R$13,00"
+            cost="R$15,00"
             onClick={() => navigation.navigate("Detail")}
           >
             DUMBO T-SHIRTS
@@ -105,15 +105,15 @@ export default function Home() {
        />
 
       <Dicas
-        cover={require('../../assets/hotel.jpg')}
+        cover={require('../../assets/onibus.jpg')}
         Dica="Excursão"
-        offer="25%"
+        offer="Novo Local de Atendimento"
        />
 
       <Dicas
-        cover={require('../../assets/hotel.jpg')}
-        Dica="Loja"
-        offer="20%"
+        cover={require('../../assets/dicadumbo.jpeg')}
+        Dica="Loja Dumbo"
+        offer="30% de desconto"
        />
 
       </ScrollView>

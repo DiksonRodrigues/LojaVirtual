@@ -5,7 +5,7 @@ import {
   StyleSheet,
 } from "react-native";
 
-export default function Favoritos() {
+export default function Destaques() {
  return (
   <View style={styles.container}>
   <View style={styles.text}>

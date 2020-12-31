@@ -7,8 +7,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import Home from "../../pages/Home";
 import Contatos from "../../pages/Contatos";
-import Favoritos from "../../pages/Favoritos";
-import Dicas from "../../pages/Dicas";
+import Destaques from "../../pages/Destaques";
 import Mais from "../../pages/Mais";
 
 const Tab = createBottomTabNavigator();
@@ -20,11 +19,8 @@ const icons = {
   Contatos:{
     name: 'ios-call'
   },
-  Favoritos:{
+  Destaques:{
     name: 'ios-heart'
-  },
-  Dicas: {
-    name: 'ios-bulb'
   },
   Mais: {
     name: 'ios-keypad'
@@ -52,8 +48,7 @@ export default function App() {
       >
         <Tab.Screen name="Início" component={Home} />
         <Tab.Screen name="Contatos" component={Contatos} />
-        <Tab.Screen name="Favoritos" component={Favoritos} />
-        <Tab.Screen name="Dicas" component={Dicas} />
+        <Tab.Screen name="Destaques" component={Destaques} />
         <Tab.Screen name="Mais" component={Mais} />
       </Tab.Navigator>
      
