@@ -13,6 +13,7 @@ import Detail3 from "./pages/Detail3";
 import Detail4 from "./pages/Detail4";
 import Detail5 from "./pages/Detail5";
 import Detail6 from "./pages/Detail6";
+import Nos from "./pages/Nos";
 import Tabs from "../src/component/Tabs";
 
 const stack = createStackNavigator();
@@ -33,6 +34,7 @@ const tab = createBottomTabNavigator();
         <stack.Screen name="Detail4" component={Detail4} />
         <stack.Screen name="Detail5" component={Detail5} />
         <stack.Screen name="Detail6" component={Detail6} />
+        <stack.Screen name="Nos" component={Nos} />
       </stack.Navigator>
    </NavigationContainer> 
   );

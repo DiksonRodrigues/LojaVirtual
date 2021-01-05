@@ -13,8 +13,9 @@ import { useNavigation } from "@react-navigation/native";
 import { AntDesign } from '@expo/vector-icons'; 
 
 import Shoes from "../../component/Shoes";
-
 import Dicas from "../../component/Dicas";
+import Sobre from "../../component/Sobre";
+
 
 export default function Home() {
   const navigation = useNavigation();
@@ -109,14 +110,25 @@ export default function Home() {
         cover={require('../../assets/onibus.jpg')}
         Dica="Excursões"
         offer="Encontre as melhores Excursões, de Fortaleza para todo o Brasil."
+        onClick={() => navigation.navigate("Mais")}
        />
 
       <Dicas
         cover={require('../../assets/dicadumbo.jpeg')}
         Dica="Loja Dumbo"
         offer="30% de desconto"
+        onClick={() => navigation.navigate("Detail")}
        />
 
+      </ScrollView>
+    
+      <ScrollView style={{paddingHorizontal: 15  }} >
+            <Sobre
+              cover={require('../../assets/sobre.jpg')}
+              Sobre="Sobre Nós"
+              offer="Saiba Mais Sobre Nós Clicando aqui..."
+              onClick={() => navigation.navigate("Nos")}
+            />
       </ScrollView>
 
       </ScrollView>
