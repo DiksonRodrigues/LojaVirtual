@@ -7,7 +7,7 @@ export default function SwiperComponent() {
  return (
    <Swiper
      autoplay={true}
-     autoplayTimeout={4.0}
+     autoplayTimeout={2.0}
      style={styles.wrapper}
      dotStyle={{
        backgroundColor: '#DCDCDC',
@@ -49,6 +49,14 @@ export default function SwiperComponent() {
          style={{ width: '100%', height: 180 }}
         />
       </View>
+
+      <View style={styles.slide} >
+        <Image
+         source={require('../../assets/swiper4.png')}
+         style={{ width: '100%', height: 180 }}
+        />
+      </View>
+
 
    </Swiper>
   );
