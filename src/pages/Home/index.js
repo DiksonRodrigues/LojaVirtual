@@ -15,7 +15,7 @@ import { AntDesign } from '@expo/vector-icons';
 import Shoes from "../../component/Shoes";
 import Dicas from "../../component/Dicas";
 import Sobre from "../../component/Sobre";
-
+import SwiperComponent from "../../component/Swiper";
 
 export default function Home() {
   const navigation = useNavigation();
@@ -37,6 +37,9 @@ export default function Home() {
       <View style={styles.line} />
 
       <ScrollView>
+        <View style={styles.swiperContent} >
+          <SwiperComponent/>
+        </View>
         <Text style={styles.textDestaque}>Destaques</Text>
 
         <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
@@ -142,7 +145,6 @@ export default function Home() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    width: "100%",
     backgroundColor: "#F8F8FF",
   },
   header: {
@@ -177,4 +179,11 @@ const styles = StyleSheet.create({
     borderBottomColor: "#fff",
     borderBottomWidth: 2,
   },
+  swiperContent:{
+    flexDirection: 'row',
+    height: 180,
+    width: '100%',
+    resizeMode: 'contain'
+  }
+
 });

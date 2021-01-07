@@ -7,7 +7,6 @@ import {
   ScrollView, TouchableOpacity
 } from "react-native";
 
-import Contatos from "../Contatos";
 
 
 export default function Nos({ navigation }) { 
