@@ -1,3 +1,9 @@
+/*
+COMPONENTE SWIPER PARA FAZER UM BANNER ROTATIVO NO TOPO DA HOME,
+SERVIRÁ TAMBÉM PARA COLOCAR AS LOJAS QUE QUIZEREM DESTACAR-SE.
+*/ 
+
+
 import React from 'react';
 import { View, StyleSheet, Image } from 'react-native';
 import Swiper from 'react-native-swiper';
