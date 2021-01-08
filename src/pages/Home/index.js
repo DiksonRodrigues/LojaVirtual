@@ -12,7 +12,7 @@ import { useNavigation } from "@react-navigation/native";
 
 import { AntDesign } from '@expo/vector-icons'; 
 
-import Shoes from "../../component/Shoes";
+import Lojas from "../../component/Lojas";
 import Dicas from "../../component/Dicas";
 import Sobre from "../../component/Sobre";
 import SwiperComponent from "../../component/Swiper";
@@ -44,56 +44,57 @@ export default function Home() {
         <Text style={styles.textDestaque}>Destaques</Text>
 
         <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
-          <Shoes
+          <Lojas
             img={require("../../assets/dumbo1.jpg")}
             cost="R$15,00"
             onClick={() => navigation.navigate("Detail")}
           >
             DUMBO T-SHIRTS
-          </Shoes>
+          </Lojas>
 
-          <Shoes
+          <Lojas
             img={require("../../assets/cljeans1.jpg")}
             cost="R$35,00"
             onClick={() => navigation.navigate("Detail2")}
           >
             CL JEANS
-          </Shoes>
+          </Lojas>
         </View>
 
         <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
-          <Shoes
+          <Lojas
             img={require("../../assets/brilho1.jpg")}
             cost="R$ Á Combinar"
             onClick={() => navigation.navigate("Detail3")}
           >
             BRILHO DO MAR
-          </Shoes>
+          </Lojas>
           
-          <Shoes
+          <Lojas
             img={require("../../assets/feminice1.jpg")}
             cost="R$28.00"
             onClick={() => navigation.navigate("Detail4")}
           >
             Loja Feminice 
-          </Shoes>
+          </Lojas>
         </View>
 
         <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
-          <Shoes
+          <Lojas
             img={require("../../assets/ramira1.jpg")}
             cost="R$ Á Combinar"
             onClick={() => navigation.navigate("Detail5")}
           >
             Ramira Moda Fitness
-          </Shoes>
-          <Shoes
+          </Lojas>
+          
+          <Lojas
             img={require("../../assets/chitzc.jpg")}
             cost="R$ Á Combinar"
             onClick={() => navigation.navigate("Detail6")}
           >
            Chinntz
-          </Shoes>
+          </Lojas>
           
         </View> 
        
