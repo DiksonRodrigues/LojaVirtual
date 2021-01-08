@@ -10,6 +10,8 @@ import Routes from "./src/router";
 
 
 export default function App() {
+  console.disableYellowBox = true;
+
   let [fontsLoaded] = useFonts({
     Anton_400Regular,
   });

@@ -38,7 +38,7 @@ export default function Home() {
 
         <MaisContatos
             img={require("../../assets/feminina.png")}
-            onClick={() => navigation.navigate("Detail2")}
+            onClick={() => navigation.navigate("Feminina")}
           >
             FEMININA
         </MaisContatos>
@@ -47,19 +47,19 @@ export default function Home() {
         <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
         <MaisContatos
             img={require("../../assets/infantil.png")}
-            onClick={() => navigation.navigate("Detail3")}
+            onClick={() => navigation.navigate("Infantil")}
            >
             INFANTIL
         </MaisContatos>
           
          <MaisContatos
             img={require("../../assets/acessorios.png")}
-            onClick={() => navigation.navigate("Detail4")}
+            onClick={() => navigation.navigate("Acessorios")}
           >
             ACESSÓRIOS
         </MaisContatos>
         </View>
-
+        <Text style={{paddingHorizontal: 15, fontSize: 20, padding: 20 }} > Estamos Trabalhando diariamente para trazer mais contatos confiáveis para nossos usuários...</Text>
       </ScrollView>
       
     </View>

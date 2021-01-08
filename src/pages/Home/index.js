@@ -143,21 +143,21 @@ export default function Home() {
             cover={require('../../assets/feminina.png')}
             OutrasLojas="Feminina"
             offer="Clique Aqui"
-            onClick={() => navigation.navigate("Contatos")}
+            onClick={() => navigation.navigate("Feminina")}
             />
    
            <OutrasLojas
             cover={require('../../assets/infantil.png')}
             OutrasLojas="INFANTIL"
             offer="Clique Aqui"
-            onClick={() => navigation.navigate("Contatos")}
+            onClick={() => navigation.navigate("Infantil")}
             />
 
            <OutrasLojas
             cover={require('../../assets/acessorios.png')}
             OutrasLojas="ACESSÓRIOS"
             offer="Clique Aqui"
-            onClick={() => navigation.navigate("Contatos")}
+            onClick={() => navigation.navigate("Acessorios")}
             />
 
       </ScrollView>

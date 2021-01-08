@@ -17,6 +17,9 @@ import Nos from "./pages/Nos";
 import Tabs from "../src/component/Tabs";
 
 import Masculino from "../src/pages/Contatos/masculino";
+import Feminina from "../src/pages/Contatos/feminina";
+import Infantil from "../src/pages/Contatos/infantil";
+import Acessorios from "../src/pages/Contatos/acessorios";
 
 const stack = createStackNavigator();
 const tab = createBottomTabNavigator();
@@ -39,6 +42,11 @@ const tab = createBottomTabNavigator();
         <stack.Screen name="Nos" component={Nos} />
 
         <stack.Screen name="Masculino" component={Masculino} />
+        <stack.Screen name="Feminina" component={Feminina} />
+        <stack.Screen name="Infantil" component={Infantil} />
+        <stack.Screen name="Acessorios" component={Acessorios} />
+        
+
 
       </stack.Navigator>
    </NavigationContainer> 
