@@ -16,6 +16,8 @@ import Detail6 from "./pages/Detail6";
 import Nos from "./pages/Nos";
 import Tabs from "../src/component/Tabs";
 
+import Masculino from "../src/pages/Contatos/masculino";
+
 const stack = createStackNavigator();
 const tab = createBottomTabNavigator();
 
@@ -35,6 +37,9 @@ const tab = createBottomTabNavigator();
         <stack.Screen name="Detail5" component={Detail5} />
         <stack.Screen name="Detail6" component={Detail6} />
         <stack.Screen name="Nos" component={Nos} />
+
+        <stack.Screen name="Masculino" component={Masculino} />
+
       </stack.Navigator>
    </NavigationContainer> 
   );

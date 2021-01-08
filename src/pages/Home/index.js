@@ -16,6 +16,7 @@ import Shoes from "../../component/Shoes";
 import Dicas from "../../component/Dicas";
 import Sobre from "../../component/Sobre";
 import SwiperComponent from "../../component/Swiper";
+import OutrasLojas from "../../component/OutrasLojas";
 
 export default function Home() {
   const navigation = useNavigation();
@@ -124,6 +125,42 @@ export default function Home() {
        />
 
       </ScrollView>
+  
+      <Text style= {[styles.textDestaque, { marginTop: 5 } ]}>
+       Outras Lojas
+      </Text>
+
+      <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{paddingHorizontal: 15  }} >
+       
+           <OutrasLojas
+            cover={require('../../assets/masculino.png')}
+            OutrasLojas="MASCULINO"
+            offer="Clique Aqui"
+            onClick={() => navigation.navigate("Masculino")}
+            />
+
+           <OutrasLojas
+            cover={require('../../assets/feminina.png')}
+            OutrasLojas="Feminina"
+            offer="Clique Aqui"
+            onClick={() => navigation.navigate("Contatos")}
+            />
+   
+           <OutrasLojas
+            cover={require('../../assets/infantil.png')}
+            OutrasLojas="INFANTIL"
+            offer="Clique Aqui"
+            onClick={() => navigation.navigate("Contatos")}
+            />
+
+           <OutrasLojas
+            cover={require('../../assets/acessorios.png')}
+            OutrasLojas="ACESSÓRIOS"
+            offer="Clique Aqui"
+            onClick={() => navigation.navigate("Contatos")}
+            />
+
+      </ScrollView>
     
       <ScrollView style={{paddingHorizontal: 15  }} >
             <Sobre
@@ -135,8 +172,6 @@ export default function Home() {
       </ScrollView>
 
       </ScrollView>
-      
-      
       
     </View>
   );
