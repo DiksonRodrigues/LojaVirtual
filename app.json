@@ -1,9 +1,14 @@
 {
   "expo": {
     "name": "Aplicativo Zé Avelino",
-    "slug": "Aplicativo-Zé-Avelino",
+    "slug": "aplicativozeavelino",
     "version": "1.0.0",
     "orientation": "portrait",
+    "sdkVersion": "37.0.0",
+    "android": {
+      "package": "com.zeavelino.app",
+      "versionCode": 1
+    },
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
