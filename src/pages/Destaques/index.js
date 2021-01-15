@@ -24,9 +24,13 @@ export default function Destaques() {
           <Text style={styles.text}>Lojas em Destaque</Text>
           
           <TouchableOpacity
-            style={{ position: "absolute", right: 0, alignSelf: "center" }}
+            style={{ position: "absolute", right: 0, alignSelf: "center", flexDirection: "row"}}
           >
-            <AntDesign name="heart" size={24} color="red" />
+            <AntDesign name="star" size={24} color="gold" />
+            <AntDesign name="star" size={24} color="gold" />
+            <AntDesign name="star" size={24} color="gold" />
+            <AntDesign name="star" size={24} color="gold" />
+            <AntDesign name="star" size={24} color="gold" />
           </TouchableOpacity>
         </View>
       </View>
