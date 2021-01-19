@@ -12,9 +12,9 @@ import { useNavigation } from "@react-navigation/native";
 
 
 import SwiperComponent from "../../component/Swiper";
+import MaisLugares from "../../component/MaisLugares";
 
-
-export default function Destaques() {
+export default function Mais() {
   const navigation = useNavigation();
 
   return (
@@ -29,7 +29,43 @@ export default function Destaques() {
         <View style={styles.swiperContent} >
           <SwiperComponent/>
         </View>
-      </ScrollView>
+        
+        <View style={{ flexDirection: "row", justifyContent: "space-around" }} >
+          <MaisLugares
+            img={require("../../assets/hotel.jpg")}
+            onClick={() => navigation.navigate("MaisHoteis")}
+          >
+              Hotel
+
+          </MaisLugares>
+
+          <MaisLugares
+            img={require("../../assets/onibus.jpg")}
+            onClick={() => navigation.navigate("MaisExcursao")}
+          >
+              Excursão
+
+          </MaisLugares>
+        </View>  
+        <View style={{ flexDirection: "row", justifyContent: "space-around" }} >
+          <MaisLugares
+            img={require("../../assets/restaurante.jpg")}
+            onClick={() => navigation.navigate("MaisRestaurantes")}
+          >
+              Restaurantes
+
+          </MaisLugares>
+
+          <MaisLugares
+            img={require("../../assets/barraca.jpg")}
+            onClick={() => navigation.navigate("MaisBarracas")}
+          >
+              Barracas de Praia
+
+          </MaisLugares>
+        </View>  
+
+    </ScrollView>
       
     </View>
   );
@@ -77,6 +113,10 @@ const styles = StyleSheet.create({
     height: 180,
     width: '100%',
     resizeMode: 'contain'
-  }
-
+  },
+  Mais:{
+    fontSize: 25,
+    fontFamily: "Anton_400Regular",
+    color: "#fff"
+  },
 });

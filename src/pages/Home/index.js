@@ -108,14 +108,14 @@ export default function Home() {
         cover={require('../../assets/hotel.jpg')}
         Dica="Hotel"
         offer="Com até 20% de DESCONTO"
-        onClick={() => navigation.navigate("Mais")}
+        onClick={() => navigation.navigate("MaisHoteis")}
        />
 
       <Dicas
         cover={require('../../assets/onibus.jpg')}
         Dica="Excursões"
         offer="Encontre as melhores Excursões, de Fortaleza para todo o Brasil."
-        onClick={() => navigation.navigate("Mais")}
+        onClick={() => navigation.navigate("MaisExcursao")}
        />
 
       <Dicas

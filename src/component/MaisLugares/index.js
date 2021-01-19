@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, TouchableOpacity, Image, StyleSheet } from "react-native";
 
-export default function Hoteis(props) {
+export default function MaisLugares(props) {
   //Função para quebrar dar limite ao tamanho da descrição do item da loja
   function filterDesc(desc) {
     if (desc.length < 20) {
@@ -13,10 +13,10 @@ export default function Hoteis(props) {
 
   return (
     <TouchableOpacity style={styles.container} onPress={props.onClick}>
-      <Image source={props.img} style={styles.hoteisImg} />
-      <Text style={styles.hoteisText}>{filterDesc(props.children)}</Text>
+      <Image source={props.img} style={styles.MaisLugaresImg} />
+      <Text style={styles.MaisLugaresText}>{filterDesc(props.children)}</Text>
       <View opacity={0.4}>
-        <Text style={styles.hoteisText}> {props.cost} </Text>
+        <Text style={styles.MaisLugaresText}> {props.cost} </Text>
       </View>
     </TouchableOpacity>
   );
@@ -24,18 +24,18 @@ export default function Hoteis(props) {
 
 const styles = StyleSheet.create({
   container: {
-    paddingVertical: "2%",
+    paddingVertical: "1%",
     alignItems: "center",
     justifyContent: "center",
   },
-  hoteisImg: {
+  MaisLugaresImg: {
     width: 175,
     height: 175,
     borderRadius: 20,
     borderWidth: 3,
     borderColor: "#C0C0C0",
   },
-  hoteisText: {
-    fontSize: 13,
+  MaisLugaresText: {
+    fontSize: 20,
   },
 });
