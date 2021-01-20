@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, FlatList, Text } from 'react-native';
+import { AntDesign } from '@expo/vector-icons';
 
 class App extends Component{
 
@@ -7,10 +8,13 @@ class App extends Component{
      super(props);
      this.state = {
        feed:[
-         {id: 1, nome: 'Loja A', fone: 555555858522, email: 'dg@dg.com' },
-         {id: 2, nome: 'Loja B', fone: 555555858522, email: 'ff@ff.com' },
-         {id: 3, nome: 'Loja C', fone: 555555858522, email: 'cc@cc.com' },
-         {id: 4, nome: 'Loja D', fone: 555555858522, email: 'cac@cac.com' },
+         {id: 1, loja: 'kj.jeansconceito', fone: '(85)998248669-Elane /    (85)989403199 - Alberto', instagram: 'kj.jeansconceito', local: 'Feirão Baturite box 44', },
+
+         {id: 2, loja: 'meninacheirosa_oficial', fone: '(85)991374467', instagram: 'meninacheirosa_oficial' },
+
+         {id: 3, loja: 'tdbellajeans', fone: '85998314539 - kaique / 85994405956 - Luis', instagram: 'tdbellajeans' },
+
+         {id: 4, loja: 'analove_oficial', fone: '85981348439 - Ana Love / 85998488483 - Luiza'  , instagram: 'analove_oficial' },
 
        ]
      };
@@ -19,7 +23,6 @@ class App extends Component{
   render() {
     return(
       <View style={StyleSheet.container} >
-
        <FlatList
        data={this.state.feed}
        keyExtractor={(item) => item.id }
@@ -36,13 +39,17 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   areaLojas:{
-    backgroundColor: '#222',
-    height: 100,
-    marginBottom: 5
+    backgroundColor: '#FFB6C1',
+    height: 210,
+    marginBottom: 3,
+    
   },
   Lojas:{
-    color: '#fff',
-    fontSize: 20,
+    color: '#000',
+    fontSize: 22,
+    fontFamily: "Anton_400Regular",
+    marginBottom: 5,
+    marginHorizontal: 8
   }
 });
 
@@ -53,11 +60,14 @@ class Loja extends Component{
     return(
     <View style={styles.areaLojas} >
 
-     <Text style={styles.Lojas} >Nome: {this.props.data.nome} </Text>
+     <Text style={styles.Lojas} >Loja: {this.props.data.loja} </Text>
 
      <Text style={styles.Lojas} >Fone: {this.props.data.fone} </Text>
 
-     <Text style={styles.Lojas} >Email: {this.props.data.email} </Text>
+     <Text style={styles.Lojas} >Instagram: {this.props.data.instagram} </Text>
+
+     <Text style={styles.Lojas} >Local: {this.props.data.local} </Text>
+
     </View>
     );
   }
