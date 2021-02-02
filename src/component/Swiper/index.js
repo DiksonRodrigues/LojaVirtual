@@ -37,7 +37,7 @@ export default function SwiperComponent() {
     
       <View style={styles.slide} >
         <Image
-         source={require('../../assets/swiper1.png')}
+         source={require('../../assets/anunciea.png')}
          style={{ width: '100%', height: 180, resizeMode:'cover' }}
         />
       </View>

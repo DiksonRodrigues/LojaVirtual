@@ -167,7 +167,7 @@ export default function Home() {
             <Sobre
               cover={require('../../assets/sobre.jpg')}
               Sobre="Sobre Nós"
-              offer="Saiba Mais Sobre Nós Clicando aqui..."
+              offer="Anuncie sua loja conosco !"
               onClick={() => navigation.navigate("Nos")}
             />
       </ScrollView>

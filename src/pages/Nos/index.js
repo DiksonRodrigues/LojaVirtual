@@ -7,7 +7,7 @@ import {
   ScrollView, TouchableOpacity
 } from "react-native";
 
-
+import Button from "../../component/Button/zapequipe"; 
 
 export default function Nos({ navigation }) { 
   
@@ -16,10 +16,11 @@ export default function Nos({ navigation }) {
     headerTitle: "Sobre Nós",
   }); 
  
+  const zapequipe = {}
 
   return (
  <ScrollView>   
-    <View style={styles.container}>
+    <View style={styles.container} >
         <View >
             <Text style={styles.text}>Contaremos um pouco mais sobre nós aqui. 
               </Text>
@@ -28,8 +29,15 @@ export default function Nos({ navigation }) {
               Eu nasci depois que os meus criadores/desenvolvedores localizaram no mercado da moda no CEARÁ, uma grande e triste realidade das pessoas que queriam comprar em nosso super polo de modas mais acabavam caindo em golpes na internet. 
 
               </Text>
+            <TouchableOpacity>
+              <View style={styles.anuncie} >
+                <Text style={styles.textAnu}>Anuncie Conosco</Text>
+                <Text style={styles.descricao}>Clique Abaixo</Text>
+                <Button onClick={zapequipe}/>
+              </View>
+            </TouchableOpacity> 
 
-           
+
           <Image style={styles.image}
            source={require("../../assets/nossa.png")}
            resizeMode= "contain"
@@ -56,7 +64,16 @@ export default function Nos({ navigation }) {
            source={require("../../assets/cuuida.png")}
            resizeMode= "contain"
           />
-          <ScrollView>
+
+            <TouchableOpacity>
+              <View style={styles.anuncie} >
+                    <Text style={styles.textAnu}>Anuncie Conosco</Text>
+                    <Text style={styles.descricao}>Clique Abaixo</Text>
+                    <Button onClick={zapequipe}/>
+              </View>
+            </TouchableOpacity>
+
+           <ScrollView>
           </ScrollView>
         </View>
         
@@ -78,7 +95,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     fontSize: 35,
     fontFamily: "Anton_400Regular",
-    marginLeft: 25,
+    marginLeft: 35,
     marginRight: 15,
   },
   descricao:{
@@ -86,12 +103,21 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: "#000",
     marginRight: 40,
-    marginLeft: 25,
+    marginLeft: 35,
     marginEnd: 50
-
   },
   image:{
-    width: 350,
-    height: 350,
+    width: 365,
+    height: 370,
   }, 
+  anuncie:{
+    backgroundColor: '#DCDCDC',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  textAnu:{
+    fontSize: 35,
+    fontFamily: "Anton_400Regular",
+    alignItems: 'center',
+  },
 });

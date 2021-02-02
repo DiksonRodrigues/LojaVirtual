@@ -1,11 +1,4 @@
-/* COMPONENTE DICAS 
-  Aqui criei um componente que vai ficar no nosso HOME com um TouchableOpacity,
-  para dar destaque em algumas novidades. Aqui posso colocar os meus parceiros,
-  como barraca de praia, guias turisticos, galpões dentre outros...
-*/ 
-
-
-import React from 'react';
+ import React from 'react';
 import { View, StyleSheet, ImageBackground, Text, TouchableOpacity  } from 'react-native';
 
 export default function Sobre({cover, Sobre, offer, onClick}) {
