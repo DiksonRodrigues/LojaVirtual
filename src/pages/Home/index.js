@@ -8,6 +8,8 @@ import {
   TouchableOpacity,
 } from "react-native";
 
+import Button from "../../component/Button/zapequipe";
+
 import { useNavigation } from "@react-navigation/native";
 
 import { AntDesign } from '@expo/vector-icons'; 
@@ -20,6 +22,9 @@ import OutrasLojas from "../../component/OutrasLojas";
 
 export default function Home() {
   const navigation = useNavigation();
+
+ 
+  const zapequipe = {}
 
   return (
     <View style={styles.container}>
@@ -97,6 +102,17 @@ export default function Home() {
           </Lojas>
           
         </View> 
+
+         
+        <TouchableOpacity>
+              <View style={styles.anuncie} >
+                <Text style={styles.textAnu}>Anuncie Conosco</Text>
+                <Text style={styles.descricao}>Clique Abaixo</Text>
+                <Button onClick={zapequipe}/>
+              </View>
+        </TouchableOpacity>
+
+
        
         <Text style= {[styles.textDestaque, { marginTop: 20 } ]}>
        Dica do Dia
@@ -220,6 +236,15 @@ const styles = StyleSheet.create({
     height: 180,
     width: '100%',
     resizeMode: 'contain'
-  }
-
+  },
+  anuncie:{
+    backgroundColor: '#DCDCDC',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  textAnu:{
+    fontSize: 35,
+    fontFamily: "Anton_400Regular",
+    alignItems: 'center',
+  },
 });
