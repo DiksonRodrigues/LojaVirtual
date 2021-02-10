@@ -150,21 +150,21 @@ export default function Home() {
       <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{paddingHorizontal: 15  }} >
        
            <OutrasLojas
-            cover={require('../../assets/masculino.png')}
+            cover={require('../../assets/masculino1.jpg')}
             OutrasLojas="MASCULINO"
             offer="Clique Aqui"
             onClick={() => navigation.navigate("Masculino")}
             />
 
            <OutrasLojas
-            cover={require('../../assets/feminina.png')}
+            cover={require('../../assets/feminina1.jpeg')}
             OutrasLojas="Feminina"
             offer="Clique Aqui"
             onClick={() => navigation.navigate("Feminina")}
             />
    
            <OutrasLojas
-            cover={require('../../assets/infantil.png')}
+            cover={require('../../assets/infantil1.jpg')}
             OutrasLojas="INFANTIL"
             offer="Clique Aqui"
             onClick={() => navigation.navigate("Infantil")}

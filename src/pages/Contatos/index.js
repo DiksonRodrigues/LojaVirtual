@@ -30,14 +30,14 @@ export default function Home() {
 
         <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
         <MaisContatos
-            img={require("../../assets/masculino.png")}
+            img={require("../../assets/masculino1.jpg")}
             onClick={() => navigation.navigate("Masculino")}
           >
             MASCULINO
         </MaisContatos>
 
         <MaisContatos
-            img={require("../../assets/feminina.png")}
+            img={require("../../assets/feminina1.jpeg")}
             onClick={() => navigation.navigate("Feminina")}
           >
             FEMININA
@@ -46,7 +46,7 @@ export default function Home() {
 
         <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
         <MaisContatos
-            img={require("../../assets/infantil.png")}
+            img={require("../../assets/infantil1.jpg")}
             onClick={() => navigation.navigate("Infantil")}
            >
             INFANTIL
