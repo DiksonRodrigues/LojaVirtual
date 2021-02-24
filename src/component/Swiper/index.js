@@ -9,6 +9,7 @@ import { View, StyleSheet, Image } from 'react-native';
 import Swiper from 'react-native-swiper';
 
 
+
 export default function SwiperComponent() {
  return (
    <Swiper
