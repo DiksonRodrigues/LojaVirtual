@@ -1,30 +1,33 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, ScrollView } from 'react-native';
 
-export default function MaisHoteis({navigation}) {
+import SwiperVila from "./swiper.hoteis";
+
+export default function MaisExcursao({navigation}) {
   navigation.setOptions({
     headerTitle: "Mais Hoteis",
   });
 
  return (
-   <View style={styles.container} >
-     <Image style={styles.image}
-      source={require("../../assets/sobre.jpg")}
-      resizeMode= "cover"
-     />
-     <Text style={styles.text} > Desculpe, ainda não temos Hoteis para mostrar... </Text>
-   </View>
+   
+   <ScrollView style={styles.container} >
+     <Text style={styles.title} > Hotel da Villa </Text>
+    
+    <View style={styles.swiper}> 
+      <SwiperVila/>
+    </View>
+     <Text style={styles.descripion} > Hotel caro demais  </Text>
+
+   </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container:{
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
     backgroundColor: "#fff"
   },
-  text:{
+  title:{
     color: '#000',
     fontFamily: "Anton_400Regular",
     fontSize: 25,
@@ -32,8 +35,13 @@ const styles = StyleSheet.create({
     marginVertical: "3%",
     right: 10,
   },
-  image:{
-    height: 400,
-    backgroundColor: "#fff"
+  swiper:{
+    height: 300,
+    padding: 10,
+  },
+  descripion:{
+    fontSize: 20,
+    marginHorizontal: "6%",
+    right: 10,
   }
 })
