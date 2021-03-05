@@ -3,26 +3,35 @@ import { StatusBar } from "expo-status-bar";
 import React, { useEffect } from "react";
 import { AppLoading } from "expo";
 import { useFonts, Anton_400Regular } from "@expo-google-fonts/anton";
+import * as Notifications from 'expo-notifications';
+import * as Permissions from 'expo-permissions';
 
 import Routes from "./src/router";
-import OneSignal from "react-native-onesignal";
+
 
 
 export default function App() {
-  
-   useEffect(() => {
- 
-    OneSignal.init("3536d8b4-dcef-4834-aa3a-c189f88a27d9");
-  
-    OneSignal.addEventListener('opened', onOpened);
-  
-  }, []);
 
-  function onOpened(openResult) {
-    console.log('Message: ', openResult.notification.payload.body);
-    console.log('openResult: ', openResult);
+  useEffect(()=>{
+    registerForPushNotifications().then(token => console.log(token)).
+    catch(err => console.log(Err))
+  }, [])
+
+
+
+  async function registerForPushNotifications(){
+    const {status} = await Permissions.getAsync(Permissions.NOTIFICATIONS);
+     if (status!='granted') {
+       const {status} = await Permissions.askAsync(Permissions.NOTIFICATIONS)
+     }
+     if (status !='granted') {
+       alert('Falha em obter o token push');
+       return;
+     }
+     token = (await Notifications.getExpoPushTokenAsync()).data;
+     return token;
   }
-
+  
   console.disableYellowBox = true;
 
   let [fontsLoaded] = useFonts({
