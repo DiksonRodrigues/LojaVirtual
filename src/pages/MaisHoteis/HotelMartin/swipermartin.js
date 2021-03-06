@@ -4,7 +4,7 @@ import Swiper from 'react-native-swiper';
 
 
 
-export default function SwiperCost() {
+export default function SwiperMartin() {
  return (
 
   <View style={styles.container}>
@@ -31,38 +31,38 @@ export default function SwiperCost() {
        
      }}
    >
-    
       <View style={styles.slide} >
+       
         <Image
-         source={require('./images/cost1.jpg')}
+         source={require('../images/martin1.jpg')}
          style={{ width: '100%', height: 275, resizeMode:'cover', }}
         />
       </View>
 
       <View style={styles.slide} >
         <Image
-         source={require('./images/cost2.jpg')}
+         source={require('../images/martin2.jpg')}
          style={{ width: '100%', height: 275, resizeMode:'cover' }}
         />
       </View>
 
       <View style={styles.slide} >
         <Image
-         source={require('./images/cost3.jpg')}
+         source={require('../images/martin3.jpg')}
          style={{ width: '100%', height: 275, resizeMode:'cover' }}
         />
       </View>
 
       <View style={styles.slide} >
         <Image
-         source={require('./images/cost4.jpg')}
+         source={require('../images/martin4.jpg')}
          style={{ width: '100%', height: 275, resizeMode:'cover' }}
         />
       </View>
 
       <View style={styles.slide} >
         <Image
-         source={require('./images/cost5.jpg')}
+         source={require('../images/martin5.jpg')}
          style={{ width: '100%', height: 275, resizeMode:'cover' }}
         />
       </View>
