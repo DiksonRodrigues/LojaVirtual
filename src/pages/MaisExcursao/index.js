@@ -1,27 +1,25 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, ScrollView } from 'react-native';
 
-export default function MaisExcursao({navigation}) {
+export default function MaisExcursoes({navigation}) {
   navigation.setOptions({
     headerTitle: "Mais Excursões",
   });
 
  return (
-   <View style={styles.container} >
+   <ScrollView style={styles.container} >
      <Image style={styles.image}
-      source={require("../../assets/sobre.jpg")}
+      source={require("./images/onibus.jpg")}
       resizeMode= "cover"
      />
-     <Text style={styles.text} > Desculpe, ainda não temos mais Excursões para mostrar... </Text>
-   </View>
+     <Text style={styles.text} > Desculpe, ainda não temos Excursões de praia para mostrar... </Text>
+   </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container:{
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
     backgroundColor: "#fff"
   },
   text:{
@@ -29,11 +27,10 @@ const styles = StyleSheet.create({
     fontFamily: "Anton_400Regular",
     fontSize: 25,
     marginHorizontal: "6%",
-    marginVertical: "3%",
-    right: 10,
   },
   image:{
-    height: 400,
-    backgroundColor: "#fff"
+    height: 300,
+    backgroundColor: "#fff",
+    width: 400,
   }
 })
