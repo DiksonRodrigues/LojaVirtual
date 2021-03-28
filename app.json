@@ -6,7 +6,7 @@
     "orientation": "portrait",
     "sdkVersion": "38.0.0",
     "android": {
-      "package": "com.zeavelino.app",
+      "package": "com.joseavelino.app",
       "versionCode": 1
     },
     "icon": "./assets/icon.png",
