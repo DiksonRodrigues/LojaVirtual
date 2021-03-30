@@ -7,7 +7,8 @@
     "sdkVersion": "38.0.0",
     "android": {
       "package": "com.joseAvelino.app",
-      "versionCode": 1
+      "versionCode": 1.0,
+      "permissions": []
     },
     "icon": "./assets/icon.png",
     "splash": {
@@ -18,8 +19,6 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "permissions": []
-   },
     "assetBundlePatterns": [
       "**/*"
     ],
@@ -30,4 +29,4 @@
       "favicon": "./assets/favicon.png"
     }
   }
-
+}
