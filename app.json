@@ -6,7 +6,7 @@
     "orientation": "portrait",
     "sdkVersion": "38.0.0",
     "android": {
-      "package": "com.joseavelino.app",
+      "package": "com.joseAvelino.app",
       "versionCode": 1
     },
     "icon": "./assets/icon.png",
@@ -18,6 +18,8 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
+    "permissions": []
+   },
     "assetBundlePatterns": [
       "**/*"
     ],
@@ -28,4 +30,4 @@
       "favicon": "./assets/favicon.png"
     }
   }
-}
+
